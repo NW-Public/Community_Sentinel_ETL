@@ -55,11 +55,12 @@ a. To run one model year erase all but one line, save the line that describes th
 B. To run more than one year add the desired lines. 
 You must specify this table input three times. In native SAS the CARDS statement should populate in the console as YELLOW highlighted text. The text block should not have a semi-colon on the same line as the highlighted yellow text, but right below it. The following is the appropriate syntax for two years:
 datalines;
+```
 2010	1	12	ETL	MBSF.MBSF_ABCD_2010
 2011	1	12	ETL	MBSF.MBSF_ABCD_2011
 ;/* ‘;’ not on the line above!*/
 Run; /*you must do this twice more with two other dummy tables with different variables!*/
-
+```
 002_options_libs_sas:
 You must configure the file paths, etl version, the previous file path to the previous version to match your configuration in Step 1. This should be the native configuration: Run ETL  5 v1, reference ELT4 version 1. If you do not reconfigure the native file paths and syntax should work. 
 
