@@ -9,6 +9,9 @@ The Observational Health Data Sciences and Informatics (OHDSI) collaboration has
 
 This code is based on code provided here by Sentinel Operations Center (SOC): https://dev.sentinelsystem.org/projects/DCMS/repos/cms_medicare_ffs_datamart/browse/CMS-ETL-100pct  
 
+Documentation link:
+https://dev.sentinelsystem.org/projects/DCMS/repos/cms_medicare_ffs_datamart/raw/Medicare_Fee-For-Service_Data_Transformation_SCDM_Technical_Specifications.pdf?at=refs%2Fheads%2Fmaster
+
 The SOC code may requrie tweaks to make it run as regular VRDC user. Our code includes those tweaks.
 
 What this program does: This program implements the SAS ETL for VRDC to SCDM on a ‘non- elite’ machine and further transforms SAS SCDM ETL output to match the OMOP CDM. 
