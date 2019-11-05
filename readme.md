@@ -12,13 +12,26 @@ This code is based on code provided here by Sentinel Operations Center (SOC): ht
 Documentation link:
 https://dev.sentinelsystem.org/projects/DCMS/repos/cms_medicare_ffs_datamart/raw/Medicare_Fee-For-Service_Data_Transformation_SCDM_Technical_Specifications.pdf?at=refs%2Fheads%2Fmaster
 
+What this program does: This program implements the SAS ETL for VRDC to SCDM on a ‘non- elite’ machine and further transforms SAS SCDM ETL output to match the OMOP CDM. 
+
+
+## Regular vs. enhanced account
 The SOC code may requrie tweaks to make it run as regular VRDC user. Our code includes those tweaks.
 
-What this program does: This program implements the SAS ETL for VRDC to SCDM on a ‘non- elite’ machine and further transforms SAS SCDM ETL output to match the OMOP CDM. 
+Per https://www.sentinelinitiative.org/sentinel/surveillance-tools/software-packages-and-toolkits/centers-medicare-and-medicaid-services-cms-medicare, the required RAM is 32 GB and ability to use batch processing.
+
+
+
 
 ## Community
 
 While the SOC code is static and not officialy maintained, we hope to incorporate any community contribution and have this code evolve. (here on github). Please contribute with your pull request.
+
+### No support statement from SOC ETL
+https://www.sentinelinitiative.org/sentinel/surveillance-tools/software-packages-and-toolkits/centers-medicare-and-medicaid-services-cms-medicare
+
+>There is no mechanism for technical support by Duke University, the Sentinel Operations Center, ResDAC, CMS, or by the U. S. Food and Drug Administration (FDA) for use of this SAS program package.
+
 
 # Steps to run the ETL
 In order to run this program successfully several configuration steps are necessary.
