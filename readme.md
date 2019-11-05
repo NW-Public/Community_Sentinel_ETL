@@ -50,12 +50,13 @@ Pick which ETL output products to make and specify where the programs live.
 
 001_etl_info
 This program works by making a dummy table that describes the operations to be run and then interpreting the dummy table as if it were a set of instructions. In program 02, you can configure the dummy table and effectively submit instructions to the job itself. 
-Instructions are described as a fixed file (the Master Summary Beneficiary File) that is populated as an annualized set. You declare which years of the file, duration of the observation months and a few other items. The parameters are described here: .
+Instructions are described as a fixed file (the Master Summary Beneficiary File) that is populated as an annualized set. You declare which years of the file, duration of the observation months and a few other items. The parameters are described here: 
 a. To run one model year erase all but one line, save the line that describes the MSBF for the desired year.
 B. To run more than one year add the desired lines. 
+
 You must specify this table input three times. In native SAS the CARDS statement should populate in the console as YELLOW highlighted text. The text block should not have a semi-colon on the same line as the highlighted yellow text, but right below it. The following is the appropriate syntax for two years:
-datalines;
 ```
+datalines;
 2010	1	12	ETL	MBSF.MBSF_ABCD_2010
 2011	1	12	ETL	MBSF.MBSF_ABCD_2011
 ;/* ‘;’ not on the line above!*/
