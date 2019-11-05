@@ -7,13 +7,24 @@ The Sentinel Initiative is a Food and Drug Administration project to harmonize c
 
 The Observational Health Data Sciences and Informatics (OHDSI) collaboration has produced a Common Data Model (CDM) for the standardization and analysis of multi-format clinical data for observational health research. The OHDSI CDM is an international standard for observational health research. 
 
+This code is based on code provided here by Sentinel Operations Center (SOC): https://dev.sentinelsystem.org/projects/DCMS/repos/cms_medicare_ffs_datamart/browse/CMS-ETL-100pct  
+
+The SOC code may requrie tweaks to make it run as regular VRDC user. Our code includes those tweaks.
+
 What this program does: This program implements the SAS ETL for VRDC to SCDM on a ‘non- elite’ machine and further transforms SAS SCDM ETL output to match the OMOP CDM. 
 
-# Steps
+## Community
+
+While the SOC code is static and not officialy maintained, we hope to incorporate any community contribution and have this code evolve. (here on github). Please contribute with your pull request.
+
+# Steps to run the ETL
 In order to run this program successfully several configuration steps are necessary.
 
 ## Step 1:  preparation
+
+
 Download the code, upload the code to VRDC and save the code in a system folder on your local SAS server. The correct folder architecture is reproduced below:
+```
 Dua_######/etl/etl5/v1/programs
 Dua_######/etl/etl5/v1/Final
 Dua_######/etl/etl5/v1/Dev
@@ -22,6 +33,7 @@ Dua_######/etl/etl5/v1/temp
 Dua_######/etl/etl4/v1/Final
 Dua_######/etl/etl4/v1/Dev
 Dua_######/etl/etl4/v1/Prelim
+```
 The ##### should be your DUA number. VRDC has SAS server folders that users can create subdirectories within. Your final folders, final, dev, prelim and temp should live as sub-directories under the superior folders listed above. If you want to change the directories you must change program 002 as well.
 
 Save the individual sas programs into the ‘programs’ folder or the scripts will not find the programs to run.
