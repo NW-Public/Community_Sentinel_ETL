@@ -59,3 +59,10 @@ Run; /*you must do this twice more with two other dummy tables with different va
 
 002_options_libs_sas:
 You must configure the file paths, etl version, the previous file path to the previous version to match your configuration in Step 1. This should be the native configuration: Run ETL  5 v1, reference ELT4 version 1. If you do not reconfigure the native file paths and syntax should work. 
+
+
+
+# Person table
+
+- run demo, encounter and mortality  (community modified versions of those sas files)
+- run OMOP person sas file
