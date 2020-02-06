@@ -84,3 +84,7 @@ You must configure the file paths, etl version, the previous file path to the pr
 
 - run demo, encounter and mortality  (community modified versions of those sas files)
 - run OMOP person sas file
+
+# Encouter table
+
+We extended the ETL to preserve claim ID and placer of service. The outputed table has thus extra columns.
